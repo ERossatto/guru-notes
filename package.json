@@ -1,6 +1,20 @@
 {
   "name": "guru-notes",
   "version": "0.0.0",
+  "contributors": [
+    {
+      "name": "Ettore Rossatto",
+      "email": "ettorerossatto@gmail.com"
+    },
+    {
+      "name": "Tulasi",
+      "email": "xxx@gmail.com"
+    },
+    {
+      "name": "Lila Govinda",
+      "email": "xxx@gmail.com"
+    }
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
