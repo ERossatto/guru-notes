@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "guru-notes"
+    }
+  },
+  "defaultProject": "guru-notes",
+  "cli": {
+    "analytics": false
+  }
 }
