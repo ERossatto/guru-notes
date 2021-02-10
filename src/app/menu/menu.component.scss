@@ -1,8 +1,11 @@
 .menu {
   position: absolute;
-  top: 4rem;
-  left: 4rem;
 
+  &__toogle-button {
+    position: relative;
+    top: -3.125rem;
+    left: 1rem;
+  }
 }
 
 

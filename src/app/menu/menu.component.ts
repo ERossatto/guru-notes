@@ -14,10 +14,4 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public onMenuClick(): void {
-    this.checkMenu = !this.checkMenu;
-
-    console.log('checkMenu-->: ', this.checkMenu);
-  }
-
 }
