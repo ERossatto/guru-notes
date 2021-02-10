@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'menu-toggle-button',
@@ -20,5 +20,4 @@ export class ToggleButtonComponent implements OnInit {
     this.checkMenu = !this.checkMenu;
     this.onClick.emit(this.checkMenu);
   }
-
 }

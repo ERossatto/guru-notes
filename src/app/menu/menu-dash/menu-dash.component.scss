@@ -1,0 +1,27 @@
+@import "./../../../variables.scss";
+
+$width-dash: 25vw;
+
+.menu-dash {
+  background: linear-gradient(
+    -45deg,
+    #f9ae9f, #f9ae9f 60%, #fcd7cf
+  );
+  // melhorar essas cores
+
+  top: -$header-height;
+  position: absolute;
+  width: $width-dash;
+  height: 100vh;
+  left: -$width-dash;
+  transition: .3s ease;
+
+  @include mobile {
+    //Adicionar codigo mobile
+  }
+
+  &--toogle {
+    left: 0vw;
+    transition: .3s ease;
+  }
+}

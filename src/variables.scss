@@ -4,6 +4,9 @@ $guru-pink: #e73c7e;
 $guru-blue: #23a6d5;
 $guru-green: #23d5ab;
 
+//variables;
+$header-height: 4rem;
+
 @mixin mobile($orientation: portrait) {
 
 	@if $orientation == portrait {
