@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as EventEmitter from 'events';
 
 @Component({
   selector: 'app-menu',
@@ -14,4 +15,7 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public onToggleClick(event): void {
+    this.checkMenu = event;
+  }
 }
