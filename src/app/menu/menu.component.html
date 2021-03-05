@@ -6,7 +6,8 @@
   </menu-toggle-button>
 
   <menu-dash
-    [toogle]="checkMenu">
+    [toogle]="checkMenu"
+    (activeOption)="onOptionClick($event)">
   </menu-dash>
 
 </section>

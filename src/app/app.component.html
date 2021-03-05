@@ -1,4 +1,13 @@
 <section>
+
   <app-header></app-header>
-  <app-menu></app-menu>
+
+  <app-menu
+    (activeOption)="activeOption = $event">
+  </app-menu>
+
+  <app-content
+    [activeOption]="activeOption">
+  </app-content>
+
 </section>

@@ -16,6 +16,10 @@ $width-dash: 25vw;
   left: -$width-dash;
   transition: .3s ease;
 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
   @include mobile {
     //Adicionar codigo mobile
   }
@@ -23,5 +27,23 @@ $width-dash: 25vw;
   &--toogle {
     left: 0vw;
     transition: .3s ease;
+  }
+
+  .options {
+    position: relative;
+    top: calc(1rem + #{$header-height});
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      cursor: pointer;
+      color: $guru-pink;
+      font-family: 'Roboto', sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: .75rem;
+    }
   }
 }

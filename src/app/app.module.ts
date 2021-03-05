@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderModule } from './header/header.module';
 import { MenuModule } from './menu/menu.module';
+import { ContentModule } from './content/content.module';
 
 import { AppComponent } from './app.component';
 
@@ -18,6 +19,7 @@ import { AppComponent } from './app.component';
     CommonModule,
     HeaderModule,
     MenuModule,
+    ContentModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

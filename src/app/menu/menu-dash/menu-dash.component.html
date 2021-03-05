@@ -1,5 +1,11 @@
 <section
   class="menu-dash"
   [ngClass]="{'menu-dash--toogle': toogle}">
+
+  <div class="options">
+    <a (click)="onOptionClick('home')">HOME</a>
+    <a (click)="onOptionClick('cadastrar')">CADASTRAR</a>
+  </div>
+
   <!-- Adicionar marca dagua de mandala -->
 </section>

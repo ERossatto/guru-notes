@@ -1,22 +1,22 @@
-import { Component, Input, OnInit, SimpleChanges, OnChanges } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'menu-dash',
   templateUrl: './menu-dash.component.html',
   styleUrls: ['./menu-dash.component.scss']
 })
-export class MenuDashComponent implements OnInit, OnChanges {
+export class MenuDashComponent implements OnInit {
 
   @Input() toogle: boolean = false;
+  @Output() activeOption: EventEmitter<string> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  ngOnChanges( change: SimpleChanges ) {
-    console.log('TOOGLE-->: ', this.toogle);
-
+  public onOptionClick(optionName: string): void {
+    this.activeOption.emit(optionName);
   }
 
 }
