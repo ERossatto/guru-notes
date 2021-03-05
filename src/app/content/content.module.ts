@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ContentComponent } from './content.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
-    ContentComponent,
     HomeComponent,
     RegisterComponent,
   ],
@@ -15,7 +13,6 @@ import { RegisterComponent } from './register/register.component';
     CommonModule,
   ],
   exports: [
-    ContentComponent,
   ]
 })
 
