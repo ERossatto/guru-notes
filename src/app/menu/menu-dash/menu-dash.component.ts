@@ -7,16 +7,20 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class MenuDashComponent implements OnInit {
 
-  @Input() toogle: boolean = false;
-  @Output() activeOption: EventEmitter<string> = new EventEmitter();
+  @Input() toggle: boolean = false;
+  @Output() onClose: EventEmitter<void> = new EventEmitter()
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  public onOptionClick(optionName: string): void {
-    this.activeOption.emit(optionName);
+  private _collapseMenu(): void {
+    this.toggle = false;
+    this.onClose.emit();
   }
 
+  public handleOption(): void {
+    this._collapseMenu();
+  }
 }

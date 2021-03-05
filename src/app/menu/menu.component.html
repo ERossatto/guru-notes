@@ -2,12 +2,13 @@
 
   <menu-toggle-button
     class="menu__toogle-button"
+    [toggle]="checkMenu"
     (onClick)="onToggleClick($event)">
   </menu-toggle-button>
 
   <menu-dash
-    [toogle]="checkMenu"
-    (activeOption)="onOptionClick($event)">
+    [toggle]="checkMenu"
+    (onClose)="checkMenu = false">
   </menu-dash>
 
 </section>

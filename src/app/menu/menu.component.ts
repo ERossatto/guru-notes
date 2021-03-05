@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,8 +7,6 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 
 export class MenuComponent implements OnInit {
-
-  @Output() activeOption: EventEmitter<string> = new EventEmitter();
 
   public checkMenu: boolean = false;
 
@@ -19,9 +17,5 @@ export class MenuComponent implements OnInit {
 
   public onToggleClick(event): void {
     this.checkMenu = event;
-  }
-
-  public onOptionClick(optionName: string): void {
-    this.activeOption.emit(optionName)
   }
 }
