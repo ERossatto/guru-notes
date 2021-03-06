@@ -1,6 +1,7 @@
 @import "./../../../variables.scss";
 
 $width-dash: 25vw;
+$width-dash-mobile: 100vw;
 
 .menu-dash {
   background: linear-gradient(
@@ -21,7 +22,13 @@ $width-dash: 25vw;
   align-items: flex-start;
 
   @include mobile {
-    //Adicionar codigo mobile
+    left: -$width-dash-mobile;
+    width: $width-dash-mobile;
+  }
+
+  @include mobile(landscape) {
+    left: -$width-dash-mobile;
+    width: $width-dash-mobile;
   }
 
   &--toogle {
