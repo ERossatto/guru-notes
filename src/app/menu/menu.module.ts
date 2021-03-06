@@ -5,11 +5,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { MenuComponent } from './menu.component';
 import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
 import { MenuDashComponent } from './menu-dash/menu-dash.component';
-import { AppComponent } from '../app.component';
+import { HomeComponent } from '../content/home/home.component';
 
 export const routes: Routes = [{
   path: '',
-  component: AppComponent,
+  component: HomeComponent,
 }];
 
 @NgModule({
