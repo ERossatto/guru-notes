@@ -1,4 +1,11 @@
+// Angular
 import { Component, OnInit } from '@angular/core';
+
+// Services
+import { LanguageService } from 'app/services/language.service';
+
+// Helpers
+import { Texts } from '@texts';
 
 @Component({
   selector: 'content-home',
@@ -7,9 +14,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public texts = Texts.HomeComponent;
 
-  ngOnInit(): void {
-  }
+  constructor(
+    public languageService: LanguageService,
+  ) { }
 
+  ngOnInit(): void { }
 }

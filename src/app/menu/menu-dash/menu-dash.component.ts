@@ -1,4 +1,17 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+// Angular
+import {
+  Component,
+  Input,
+  OnInit,
+  Output,
+  EventEmitter,
+} from '@angular/core';
+
+// Services
+import { LanguageService } from 'app/services/language.service';
+
+// Helpers
+import { Texts } from '@texts';
 
 @Component({
   selector: 'menu-dash',
@@ -8,12 +21,15 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 export class MenuDashComponent implements OnInit {
 
   @Input() toggle: boolean = false;
-  @Output() onClose: EventEmitter<void> = new EventEmitter()
+  @Output() onClose: EventEmitter<void> = new EventEmitter();
 
-  constructor() { }
+  public texts = Texts.MenuDashComponent;
 
-  ngOnInit(): void {
-  }
+  constructor(
+    public languageService: LanguageService,
+  ) { }
+
+  ngOnInit(): void { }
 
   private _collapseMenu(): void {
     this.toggle = false;
