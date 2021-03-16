@@ -5,10 +5,11 @@
   <div class="options">
     <a [routerLink]="['/home']" (click)="handleOption()">{{texts.optionList.home[languageService.language] | uppercase}}</a>
     <a [routerLink]="['/register']" (click)="handleOption()">{{texts.optionList.register[languageService.language] | uppercase}}</a>
+    <a [routerLink]="['/teste']" (click)="handleOption()">Teste</a>
   </div>
 
   <div class="languages">
-    <button style="cursor: pointer;" (click)="languageService.setLanguagePT();">PT</button>
+    <button style="cursor: pointer;" (click)="languageService.setLanguagePT()">PT</button>
     <button style="cursor: pointer;" (click)="languageService.setLanguageEN()">EN</button>
   </div>
 
